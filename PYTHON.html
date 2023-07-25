@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="StyleSheet" href="styles.css">
+<title>Python documentation</title>
+</head>
+<body>
+<main id="main-doc">
+<nav id="navbar">
+<header>
+<h1>Python Documentation</h1>
+<hr>
+<a href="#getting_started" class="nav-link">getting started</a>
+<hr>
+<a href="#Hello_world" class="nav-link">Hello world</a>
+<hr>
+<a href="#Creating_variables_and_assigning_values" class="nav-link">Creating variables and assigning values</a>
+<hr>
+<a href="#Block_Indentation" class="nav-link">Block Indentation</a>
+<hr>
+<a href="#User_Input" class="nav-link">User Input</a>
+<hr>
+
+</header>
+</nav>
+<div>
+<section class="main-section" id="getting_started">
+<header>
+<h2>Getting started</h2>
+</header>
+<p>Python is a widely used high-level programming language for general-purpose programming, created by Guido van
+Rossum and first released in 1991. Python features a dynamic type system and automatic memory management
+and supports multiple programming paradigms, including object-oriented, imperative, functional programming,
+and procedural styles. It has a large and comprehensive standard library<br>Two major versions of Python are currently in active use:</p>
+<ul>
+<li>Python 3.x is the current version and is under active development.</li>
+<li>Python 2.x is the legacy version and will receive only security updates until 2020. No new features will be
+implemented. Note that many projects still use Python 2, although migrating to Python 3 is getting easier.</li>
+</ul>
+<p>You can download and install either version of Python <a href="https://www.python.org/downloads/">here</a>. See Python 3 vs. Python 2 for a comparison between
+them. In addition, some third-parties offer re-packaged versions of Python that add commonly used libraries and
+other features to ease setup for common use cases, such as math, data analysis or scientific use.<br>To confirm that Python was installed correctly, you can verify that by running the following command in your
+favorite terminal (If you are using Windows OS, you need to add path of python to the environment variable before
+using it in command prompt): </p>
+<code>$ python --version<br>
+Python 3.x Version ≥ 3.0</code>
+</section>
+<section class="main-section" id="Hello_world">
+<header>
+<h2>Hello World in Python using IDLE</h2>
+</header>
+<p>IDLE is a simple editor for Python, that comes bundled with Python.<br><br>
+<strong>How to create Hello, World program in IDLE</strong><br></p>
+<ul>
+<li>Open IDLE on your system of choice.</li>
+<ul>
+<li>In older versions of Windows, it can be found at All Programs under the Windows menu.</li>
+<li>In Windows 8+, search for IDLE or find it in the apps that are present in your system.</li>
+<li>On Unix-based (including Mac) systems you can open it from the shell by typing $ idle
+python_file.py.</li>
+</ul>
+<li>It will open a shell with options along the top.</li>
+</ul>
+<p>In the shell, there is a prompt of three right angle brackets.
+<br>
+Now write the following code in the prompt and hit Enter:</p>
+<code>>>> print("Hello World")
+<br>
+Hello World</code>
+</section>
+<section class="main-section" id="Creating_variables_and_assigning_values">
+<header>
+<h2>Creating variables and assigning values</h2>
+</header>
+<p>To create a variable in Python, all you need to do is specify the variable name, and then assign a value to it</p>
+<code>variable name = value</code>
+<p>Python uses = to assign values to variables.<br> There's no need to declare a variable in advance (or to assign a data
+type to it), assigning a value to a variable itself declares and initializes the variable with that value.<br> There's no way to
+declare a variable without assigning it an initial value.</p>
+<code># Integer
+a = 2<br>
+print(a)<br>
+# Output: 2<br>
+# Integer<br>
+b = 9223372036854775807<br>
+print(b)<br>
+# Output: 9223372036854775807<br>
+# Floating point<br>
+pi = 3.14<br>
+print(pi)<br>
+# Output: 3.14<br>
+# String<br>
+c = 'A'<br>
+print(c)<br>
+# Output: A<br>
+# String<br>
+name = 'John Doe'<br>
+print(name)<br>
+# Output: John Doe<br>
+# Boolean<br>
+q = True<br>
+print(q)<br>
+# Output: True<br>
+# Empty value or null data type<br>
+x = None<br>
+print(x)<br>
+# Output: None</code>
+</section>
+<section class="main-section" id="Block_Indentation">
+<header>
+<h2>Block Indentation</h2>
+</header>
+<p>Python uses indentation to define control and loop constructs. This contributes to Python's readability, however, it
+requires the programmer to pay close attention to the use of whitespace. Thus, editor miscalibration could result in
+code that behaves in unexpected ways.
+<br><br>Python uses the colon symbol (:) and indentation for showing where blocks of code begin and end (If you come
+from another language, do not confuse this with somehow being related to the ternary operator). That is, blocks in
+Python, such as functions, loops, if clauses and other constructs, have no ending identifiers. All blocks start with a
+colon and then contain the indented lines below it.<br></p>
+<p>For example:</p>
+<code>def my_function(): # This is a function definition. Note the colon (:)
+<br><code>a = 2 # This line belongs to the function because it's indented
+<br>return a # This line also belongs to the same function</code>
+<br>print(my_function()) # This line is OUTSIDE the function block</code>
+</section>
+<section class="main-section" id="User_Input">
+<header>
+<h2>User Input</h2>
+</header>
+<p>To get input from the user, use the input function:</p>
+<code>Python 3.x Version ≥ 3.0<br>
+name = input("What is your name? ")<br>
+# Out: What is your name? </code>
+<p>The function takes a string argument, which displays it as a prompt and returns a string. The above code provides a
+prompt, waiting for the user to input.<br>The input after that is stored in name variable.</p>
+
+</section>
+</div>
+</main>
+</body>
+<footer><p>This documentation is taken from the text book "python notes for professionals".</p></footer>
+</html>

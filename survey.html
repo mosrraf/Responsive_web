@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<title>Survey form</title>
+</head>
+<body>
+<h1 id="title">Internship Survey</h1>
+<p id="description" class="background">Thank you for taking time to help us improving our training</p>
+<div class="transparent-shade">
+<form id="survey-form" action="https://www.powertomorrow.com">
+<label for="name" id="name-label">Name</label><div>
+<input type="text" placeholder="Enter your name here" id="name" class="input"required></div>
+<br>
+<label for="email" id="email-label">E-mail</label><div>
+<input type="email" placeholder="Enter the email here" id="email" class="input" required></div>
+<br><label for="number"id="number-label">Age</label><div>
+<input type="number" placeholder="Enter your age" id="number" class="input" min="10" max="100" required></div>
+<br>
+<fieldset><legend>Which role do you possess at this moment?</legend>
+<select id="dropdown" class="input">
+<option disabled selected>Choices</option>
+<option value="Student">Student</option>
+<option value="unemployed">Unemployed</option>
+<option value="Junior engineer">Junior engineer</option>
+<option value="Senior engineer">Senior engineer</option>
+</select>
+</fieldset>
+<br>
+<div>
+<fieldset>
+<legend>Select your gender:</legend>
+<input type="radio" id="Male" value="Male" name="gender">
+<label for="Male">Male</label>
+<br>
+<input type="radio" id="Female"value="Female" name="gender">
+<label for="Female">Female</label>
+<br>
+<input type="radio" id="other"value="other" name="gender">
+<label for="other">Other</label>
+</fieldset>
+</div>
+<br>
+<div>
+<fieldset>
+<legend>How would you like to improve our internship? (you can choose more than one choice)</legend>
+<input type="checkbox" id="remote" value="remote">
+<label for="remote">Making it remote</label>
+<br><input type="checkbox" id="period" value="period">
+<label for="period">decreasing training period per day</label>
+<br><input type="checkbox" id="practice" value="practice">
+<label for="practice">make training more practical</label>
+<br><input type="checkbox" id="subjects" value="subjects">
+<label for="subjects">increasing discussed subjects</label>
+<br><input type="checkbox" id="breaks"value="breaks">
+<label for="breaks">split training and insert breaks</label>
+<br><input type="checkbox" id="Jobs" value="Jobs">
+<label for="Jobs">providing sessions about Jobs in our corporation</label>
+</fieldset></div>
+<br>
+<div>
+<textarea class="input"></textarea>
+</div>
+<input type="submit" id="submit"class="center">
+</form>
+</div>
+</body>
+</html>
